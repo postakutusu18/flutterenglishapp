@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutterenglishapp/models/day_quesiton.dart';
+import 'package:flutterenglishapp/models/day_question_data.dart';
+import 'package:flutterenglishapp/screens/detail_page_day/detail_page_day.dart';
+import 'package:flutterenglishapp/screens/login/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,6 +14,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+     
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -24,7 +29,9 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: DayDetailPage(
+         
+      ),
     );
   }
 }
